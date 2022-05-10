@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nanoid: &mdash; kabbes_nanoid 0.7.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/readthedocs-custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. src" href="_autosummary/src.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> kabbes_nanoid
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Home page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/src.html">1. nanoid</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">kabbes_nanoid</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>nanoid:</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="nanoid">
+<h1>nanoid:<a class="headerlink" href="#nanoid" title="Permalink to this headline">¶</a></h1>
+<section id="about">
+<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
+<p>Simple Python library for generating NanoIDs</p>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">kabbes_nanoid</span></code></p>
+</section>
+<section id="project-links">
+<h2>Project Links<a class="headerlink" href="#project-links" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.github.com/jameskabbes/kabbes_nanoid">PyPI</a>
+<a class="reference external" href="https://www.github.com/jameskabbes/nanoid">GitHub</a></p>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>For more in-depth documentation, read the information provided on the Pages. Or better yet, read the source code.</p>
+</section>
+<section id="importing">
+<h2>Importing<a class="headerlink" href="#importing" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">nanoid</span></code></p>
+</section>
+<section id="get-a-nanoid-string">
+<h2>Get a nanoid string<a class="headerlink" href="#get-a-nanoid-string" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a>python
+nanoid_string = nanoid.generate()
+print (nanoid_string)
+``</p>
+</section>
+<section id="generate-a-nanoid-object">
+<h2>Generate a Nanoid object<a class="headerlink" href="#generate-a-nanoid-object" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id3"><span class="problematic" id="id4">``</span></a>python
+Obj = nanoid.Nanoid()
+print (Obj.nanoid)
+print (Obj.size)
+print (Obj.alphabet)
+``</p>
+</section>
+<section id="set-custom-generation-parameters">
+<h2>Set custom generation parameters<a class="headerlink" href="#set-custom-generation-parameters" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id5"><span class="problematic" id="id6">``</span></a>python
+print (nanoid.generate( size = 10, alphabet = ‘0123456789ABCDEF’ ))
+Obj = nanoid.Nanoid( size = 10, alphabet = ‘0123456789ABCDEF’ )
+print (Obj.nanoid)
+``</p>
+</section>
+<section id="author-s">
+<h2>Author(s)<a class="headerlink" href="#author-s" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>James Kabbes</p></li>
+</ul>
+<div class="toctree-wrapper compound" id="mastertoc">
+<p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Home page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_autosummary/src.html">1. nanoid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/src.nanoid.html">1.1. src.nanoid</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="_autosummary/src.nanoid.nanoid_main.html">1.1.1. src.nanoid.nanoid_main</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/src.nanoid.nanoid_main.generate.html">1.1.1.1. src.nanoid.nanoid_main.generate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autosummary/src.nanoid.nanoid_main.Nanoid.html">1.1.1.2. src.nanoid.nanoid_main.Nanoid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="_autosummary/src.html" class="btn btn-neutral float-right" title="1. src" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
